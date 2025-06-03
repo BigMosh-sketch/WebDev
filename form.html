@@ -10,18 +10,25 @@
         <p>Before filling the form, make sure you've <mark>checked our FAQ section</mark></p>
         <h2>Contact Form</h2>
         <form method="post" action="">
-            Full Name:<br/><input type="text" name="Full name"><br/>
-            Email Address:<br/><input type="email" name="email"><br/>
-            Phone Number:<br/><input type="number" name="number"><br/><br/>
+            Full Name:<br/><input type="text" name="Full name" autofocus><br/>
+            Email Address:<br/><input type="email" name="email" autocomplete="on"><br/>
+            Phone Number:<br/><input type="number" name="number"  required><br/><br/>
+            password: <br/><input type="password" name="password" ><br/><br/>
             Reason for Contact:<br/>
-            <select name="dropdown" multiple size="1" checked> 
+            <select name="dropdown" checked> 
                 <option value="select" >--select--           </option>
                 <option value="Intership" >Intership</option>
                 <option value="Training">Training</option>
                 <option value="Business">Business</option>
             </select><br/><br/>
+            <input list="browsers" name="browser" placeholder="Browsers">
+                <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                </datalist><br/><br/>
             Your message<br/>
-            <input type="textarea" name="message" rows="10" cols="20"><br/><br/>
+            <input type="textarea" name="your message" rows="20" cols="20"><br/><br/>
             <input type="checkbox"> I agree to the terms and condition<br/><br/>
             <button name="message"> message </button><hr/>
         </form>
